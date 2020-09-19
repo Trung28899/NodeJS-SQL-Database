@@ -48,7 +48,12 @@ III. Module Notes:
         - 2nd Commit
         - Setting up database in ./util/database.js
         - importing database and use it in app.js
-
+    
+    2. Retrieving data and fetching products: 
+        a. Retrieving data: 
+            - 3rd Commit
+            - See code in app.js
+            
 
 IV. Other Notes: 
     This module contain: 
