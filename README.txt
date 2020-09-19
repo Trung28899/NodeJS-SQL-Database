@@ -67,6 +67,9 @@ III. Module Notes:
             - ./controller/shop.js: under getProduct() > execute
             fetching single product
 
+            > Now you can go to localhost:3000 > Click details on 
+            any product > it should show details
+
     3. Inserting Data Into Database: 
         - 6th Commit
         - ./models/product.js: see how to insert data into database
