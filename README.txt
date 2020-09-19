@@ -53,7 +53,12 @@ III. Module Notes:
         a. Retrieving data: 
             - 3rd Commit
             - See code in app.js
-            
+        
+        b. Fetching data: 
+            - 4th Commit
+            - ./models/product.js: retrieving data
+            - ./controller/shop.js: in getIndex(), fetching
+            data
 
 IV. Other Notes: 
     This module contain: 

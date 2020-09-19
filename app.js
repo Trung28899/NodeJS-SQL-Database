@@ -14,22 +14,6 @@ app.set("views", "views");
 const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
 
-/*
-    We got then because db return a promise(), 
-    see ./util/database.js to understand
-*/
-db.execute("SELECT * FROM products")
-  .then((result) => {
-    /*
-        The result will return as an array
-        index 0 includes our real data in another array 
-      */
-    console.log(result[0][0], result[1]);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 

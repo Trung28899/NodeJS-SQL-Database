@@ -31,14 +31,15 @@ exports.getProduct = (req, res, next) => {
 
 // main page > "/"
 exports.getIndex = (req, res, next) => {
-  Product.fetchAll((products) => {
-    // rendering ./views/shop/index.ejs
-    res.render("shop/index", {
-      prods: products,
-      pageTitle: "Shop",
-      path: "/",
-    });
-  });
+  Product.fetchAll()
+    .then(([rows, fieldData]) => {
+      res.render("shop/product-list", {
+        prods: rows,
+        pageTitle: "All Products",
+        path: "/",
+      });
+    })
+    .catch((err) => console.log(err));
 };
 
 // click Cart > "/cart" => GET
