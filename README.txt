@@ -55,10 +55,10 @@ III. Module Notes:
             - See code in app.js
         
         b. Fetching data: 
-            - 4th Commit
+            - 5th Commit
             - ./models/product.js: retrieving data
-            - ./controller/shop.js: in getIndex(), fetching
-            data
+            - ./controller/shop.js: in getIndex() and getProducts()
+            , fetching data
 
 IV. Other Notes: 
     This module contain: 

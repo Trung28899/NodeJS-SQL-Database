@@ -7,14 +7,15 @@ const Cart = require("../models/cart");
 
 // click Products > '/products'
 exports.getProducts = (req, res, next) => {
-  Product.fetchAll((products) => {
-    // rendering ./views/shop/product-list.ejs
-    res.render("shop/product-list", {
-      prods: products,
-      pageTitle: "All Products",
-      path: "/products",
-    });
-  });
+  Product.fetchAll()
+    .then(([rows, fieldData]) => {
+      res.render("shop/product-list", {
+        prods: rows,
+        pageTitle: "All Products",
+        path: "/products",
+      });
+    })
+    .catch((err) => console.log(err));
 };
 
 // click Products > '/products/productId'
