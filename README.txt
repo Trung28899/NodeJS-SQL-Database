@@ -60,6 +60,13 @@ III. Module Notes:
             - ./controller/shop.js: in getIndex() and getProducts()
             , fetching data
 
+        c. Fetching a Single product using WHERE keyword: 
+            - 8th Commit
+            - ./models/product.js: under findById() > script for
+            retrieving
+            - ./controller/shop.js: under getProduct() > execute
+            fetching single product
+
     3. Inserting Data Into Database: 
         - 6th Commit
         - ./models/product.js: see how to insert data into database

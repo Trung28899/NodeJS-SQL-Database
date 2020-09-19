@@ -21,13 +21,15 @@ exports.getProducts = (req, res, next) => {
 // click Products > '/products/productId'
 exports.getProduct = (req, res, next) => {
   const prodID = req.params.productId;
-  Product.findById(prodID, (product) => {
-    res.render("shop/product-detail", {
-      product: product,
-      pageTitle: product.title,
-      path: "/products",
-    });
-  });
+  Product.findById(prodID)
+    .then(([product]) => {
+      res.render("shop/product-detail", {
+        product: product[0],
+        pageTitle: product[0].title,
+        path: "/products",
+      });
+    })
+    .catch((err) => console.log(err));
 };
 
 // main page > "/"
