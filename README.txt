@@ -60,6 +60,11 @@ III. Module Notes:
             - ./controller/shop.js: in getIndex() and getProducts()
             , fetching data
 
+    3. Inserting Data Into Database: 
+        - 6th Commit
+        - ./models/product.js: see how to insert data into database
+        - ./controller/admin.js: see how to execute data insertion
+        
 IV. Other Notes: 
     This module contain: 
         - Different Kinds of Databases (SQL vs NoSQL)

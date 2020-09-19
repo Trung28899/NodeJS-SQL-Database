@@ -10,7 +10,17 @@ module.exports = class Product {
     this.price = price;
   }
 
-  save() {}
+  save() {
+    /*
+      Adding array into () after VALUES 
+      this act as an extra layer of security
+      for more info, see video 144
+    */
+    return db.execute(
+      "INSERT INTO products (title, price, imageUrl, description) VALUES (?, ?, ?, ?)",
+      [this.title, this.price, this.imageUrl, this.description]
+    );
+  }
 
   static deleteById(id) {}
 
