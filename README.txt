@@ -76,6 +76,12 @@ III. Module Notes:
         - ./controller/admin.js: see how to execute data insertion
         
 IV. Other Notes: 
-    This module contain: 
+    1. This module contain: 
         - Different Kinds of Databases (SQL vs NoSQL)
         - Using SQL in a Node.js App 
+    
+    2. Resources: 
+        - Learn more about MySQL: 
+            https://www.w3schools.com/sql/
+        - More about Node.Js Mysql package: 
+            https://github.com/sidorares/node-mysql2
